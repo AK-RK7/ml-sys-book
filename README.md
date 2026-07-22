@@ -1,6 +1,18 @@
 # Harvard MLSys Study Assistant ("Zero to Hero")
 An end-to-end production RAG application built for the **LLM Zoomcamp Final Project**. This conversational AI study assistant ingests the open-source Quarto and Markdown source chapters from the **Harvard CS249r: Machine Learning Systems** textbook (`harvard-edge/cs249r_book`). 
 
+> **Disclaimer**
+>
+> This project was developed as an educational project for the **LLM Zoomcamp Final Project**. It is **not affiliated with, endorsed by, or sponsored by Harvard University or the authors of the *CS249r: Machine Learning Systems* textbook**.
+>
+> The RAG knowledge base is built from the publicly available Quarto and Markdown source files from the **harvard-edge/cs249r_book** repository:
+>
+> **https://github.com/harvard-edge/cs249r_book**
+>
+> All rights to the original content belong to their respective authors and copyright holders.
+>
+> This application is intended solely as a study aid. AI-generated responses may occasionally contain inaccuracies or incomplete information. For authoritative and up-to-date content, please refer to the original textbook and repository.
+
 It provides an intuitive interface for students to learn complex hardware-aware machine learning, compilation graphs, edge AI constraints, and tinyML systems from absolute zero to hero.
 ## LLM Zoomcamp Project Pillars Matrix
 | Course Requirement | Implementation Architecture Detail |
