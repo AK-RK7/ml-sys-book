@@ -15,6 +15,23 @@ It provides an intuitive interface for students to learn complex hardware-aware 
 >
 > This application is intended solely as a study aid. AI-generated responses may occasionally contain inaccuracies or incomplete information. For authoritative and up-to-date content, please refer to the original textbook and repository.
 
+## Problem
+Machine Learning Systems (MLSys) is a multidisciplinary subject covering deep learning optimization, distributed training, quantization, compilation, TinyTorch, edge AI, and hardware acceleration. Students often struggle to locate explanations across multiple chapters and understand how concepts connect. Searching through an entire textbook interrupts learning.
+
+## What our assistant does
+Our AI assistant helps students:
+
+Explain Machine Learning Systems concepts.
+Retrieve relevant textbook sections.
+Explain TinyTorch examples.
+Compare techniques (e.g., quantization vs pruning).
+Generate quizzes for revision.
+Cite textbook chapters.
+
+## Target Users
+
+Undergraduate and graduate students studying Harvard CS249r: Machine Learning Systems, engineers learning TinyML, Edge AI, model optimization, and compiler systems.
+
 ## LLM Zoomcamp Project Pillars Matrix
 | Course Requirement | Implementation Architecture Detail |
 | :--- | :--- |
