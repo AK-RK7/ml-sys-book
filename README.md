@@ -1,19 +1,20 @@
 # Harvard MLSys Study Assistant ("Zero to Hero")
 An end-to-end production RAG application built for the **LLM Zoomcamp Final Project**. This conversational AI study assistant ingests the open-source Quarto and Markdown source chapters from the **Harvard CS249r: Machine Learning Systems** textbook (`harvard-edge/cs249r_book`). 
 
+It provides an intuitive interface for students to learn complex hardware-aware machine learning, compilation graphs, edge AI constraints, and tinyML systems from absolute zero to hero.
+
 > **Disclaimer**
 >
 > This project was developed as an educational project for the **LLM Zoomcamp Final Project**. It is **not affiliated with, endorsed by, or sponsored by Harvard University or the authors of the *CS249r: Machine Learning Systems* textbook**.
 >
-> The RAG knowledge base is built from the publicly available Quarto and Markdown source files from the **harvard-edge/cs249r_book** repository:
+> The RAG knowledge base is built from the publicly available Quarto and Markdown source files from the **harvard-edge/cs249r_book**.
 >
-> **https://github.com/harvard-edge/cs249r_book**
+> **Repository**: <https://github.com/harvard-edge/cs249r_book>
 >
 > All rights to the original content belong to their respective authors and copyright holders.
 >
 > This application is intended solely as a study aid. AI-generated responses may occasionally contain inaccuracies or incomplete information. For authoritative and up-to-date content, please refer to the original textbook and repository.
 
-It provides an intuitive interface for students to learn complex hardware-aware machine learning, compilation graphs, edge AI constraints, and tinyML systems from absolute zero to hero.
 ## LLM Zoomcamp Project Pillars Matrix
 | Course Requirement | Implementation Architecture Detail |
 | :--- | :--- |
@@ -52,11 +53,16 @@ It provides an intuitive interface for students to learn complex hardware-aware 
 Follow these exact steps to spin up the containerized ecosystem on your machine.
 ### 1. Prerequisites
 Ensure you have the following installed:
-***Docker** and **Docker Compose*** An active **Groq API Key** or **OpenAI API Key**
+
+- **Docker** and **Docker Compose**
+- A **Groq API Key** or **OpenAI API Key**
+
 ### 2. Environment Configuration
 Create a `.env` file in the root directory of your cloned folder and fill in your credentials:
 ```env
+# Choose: groq or openai
 LLM_PROVIDER=groq
+
 GROQ_API_KEY=gsk_your_actual_groq_key_here
 OPENAI_API_KEY=sk_your_actual_openai_key_here
 ```
@@ -73,10 +79,11 @@ docker-compose exec app python ingest.py
 ### 5. Access the Platform UI
 Once ingestion concludes successfully, open your web browser and navigate to:
 ```text
-http://localhost:8501
+Open ***http://localhost:8501*** in your browser.
 ```
-## Evaluation & Production Monitoring 
-**User Feedback Tracking:** Every response generated includes ***👍 Good Answer** and **👎 Missing Info*** buttons. Clicking these instantly updates the local system runtime analytics database.
+## Evaluation & Production Monitoring
 
-**Telemetry Dashboard:** Toggle the sidebar option to ***Analytics Dashboard*** within the interface to inspect average engine latencies, request distributions, and feedback logs required for system debugging.
+- **User Feedback Tracking:** Every response includes **👍 Good Answer** and **👎 Missing Info** buttons. Feedback is logged in the local SQLite database.
+
+- **Telemetry Dashboard:** Open **Analytics Dashboard** from the sidebar to inspect response latency, request distributions, and user feedback.
 
