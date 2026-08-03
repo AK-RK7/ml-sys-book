@@ -8,20 +8,21 @@ The goal is to provide students with a reliable study assistant that can search 
 
 ---
 
-# Disclaimer
-
-This project was developed as an educational project for the **LLM Zoomcamp Final Project**.
-
-It is **not affiliated with, endorsed by, or sponsored by Harvard University or the authors of the CS249r: Machine Learning Systems textbook**.
-
-The knowledge base is created from the publicly available Quarto and Markdown source files from:
-
-Repository:
-https://github.com/harvard-edge/cs249r_book
-
-All rights to the original textbook content belong to their respective authors and copyright holders.
-
-This application is intended only as a study aid. AI-generated responses may occasionally contain inaccuracies or incomplete information. For authoritative information, refer to the original textbook repository.
+> # Disclaimer
+>
+> This project was developed as an educational project for the **LLM Zoomcamp Final Project**.
+>
+> It is **not affiliated with, endorsed by, or sponsored by Harvard University or the authors of the CS249r: Machine Learning Systems textbook**.
+>
+> The knowledge base is created from the publicly available Quarto and Markdown source files from  Harvard CS249r Book.
+>
+> Repository: https://github.com/harvard-edge/cs249r_book
+>
+> All rights to the original textbook content belong to their respective authors and copyright holders.
+> 
+> This application is intended only as a study aid. **AI-generated responses may occasionally contain inaccuracies or incomplete information**.
+>
+> For authoritative information, **refer to the original textbook repository**.
 
 ---
 
@@ -127,18 +128,6 @@ The primary users are:
 
 ---
 
-# LLM Zoomcamp Final Project Requirements
-
-| Requirement | Implementation |
-|---|---|
-| Unique dataset and ingestion | Custom ingestion pipeline processes Harvard CS249r `.qmd` and `.md` textbook sources |
-| Retrieval system | Hybrid vector + BM25 retrieval over textbook chunks |
-| LLM integration | RAG pipeline using Groq Llama models and OpenAI-compatible APIs |
-| Evaluation strategy | Retrieval metrics and LLM-as-a-Judge evaluation |
-| Monitoring | PostgreSQL logging architecture with Grafana dashboard support |
-
----
-
 # Architecture
 
 ```
@@ -199,34 +188,69 @@ The primary users are:
 
 ---
 
+# LLM Zoomcamp Final Project Requirements
+
+| Requirement | Implementation |
+|---|---|
+| Unique dataset and ingestion | Custom ingestion pipeline processes Harvard CS249r `.qmd` and `.md` textbook sources |
+| Retrieval system | Hybrid vector + BM25 retrieval over textbook chunks |
+| LLM integration | RAG pipeline using Groq Llama models and OpenAI-compatible APIs |
+| Evaluation strategy | Retrieval metrics and LLM-as-a-Judge evaluation |
+| Monitoring | PostgreSQL logging architecture with Grafana dashboard support |
+
+---
+
 # Project Structure
 
 ```
+ml-sys-book$ tree -L 2
 .
-
-├── study_assistant/
-│
-│   ├── app.py
-│   ├── rag.py
-│   ├── ingest.py
-│   ├── minsearch.py
-│   ├── db.py
-│   └── config.py
-│
-├── evaluation/
-│
-│   ├── generate_ground_truth.py
-│   ├── evaluate_retrieval.py
-│   └── evaluate_rag.py
-│
-├── data/
-│
-│   ├── raw/
-│   └── processed/
-│
-├── Dockerfile
+├── cli.py
+├── data
+│   ├── ground_truth_retrieval.csv
+│   ├── processed
+│   ├── rag_evaluation_results.csv
+│   ├── raw
+│   └── retrieval_tuning_results.csv
 ├── docker-compose.yml
-└── README.md
+├── Dockerfile
+├── evaluation
+│   ├── evaluate_rag.py
+│   ├── evaluate_retrieval.py
+│   └── generate_ground_truth.py
+├── grafana
+│   ├── dashboard.json
+│   └── init.py
+├── main.py
+├── ml_sys_book.egg-info
+│   ├── dependency_links.txt
+│   ├── PKG-INFO
+│   ├── requires.txt
+│   ├── SOURCES.txt
+│   └── top_level.txt
+├── notebook.ipynb
+├── __pycache__
+│   ├── cli.cpython-313.pyc
+│   └── test_cli.cpython-313-pytest-9.1.1.pyc
+├── pyproject.toml
+├── README.md
+├── study_assistant
+│   ├── app.py
+│   ├── config.py
+│   ├── db_prep.py
+│   ├── db.py
+│   ├── ingest.py
+│   ├── __init__.py
+│   ├── minsearch.py
+│   ├── prompts.py
+│   ├── __pycache__
+│   ├── rag.py
+│   └── templates
+├── test.py
+└── uv.lock
+
+11 directories, 33 files
+
 ```
 
 ---
@@ -347,7 +371,6 @@ Run:
 uv run python evaluation/generate_ground_truth.py
 
 uv run python evaluation/evaluate_retrieval.py
-```
 
 Best results:
     text_boost  semantic_weight  hit_rate       mrr
@@ -361,7 +384,7 @@ Best results:
 10        0.40              0.7  0.811927  0.686315
 6         0.35              0.6  0.809633  0.684709
 9         0.40              0.6  0.811927  0.684098
-
+```
 ---
 
 ## 2. RAG Answer Evaluation
@@ -378,7 +401,7 @@ Run:
 
 ```bash
 uv run python evaluation/evaluate_rag.py
-```
+
 
 Relevance distribution:
 relevance
@@ -389,7 +412,7 @@ UNKNOWN            0.005
 Name: proportion, dtype: float64
 
 Saved: data/rag_evaluation_results.csv
-
+```
 ---
 
 # Retrieval Improvements
@@ -460,6 +483,7 @@ Planned improvements:
 
 # Technology Stack
 
+```
 | Component       | Technology                            |
 | --------------- | ------------------------------------- |
 | Language        | Python                                |
@@ -470,7 +494,7 @@ Planned improvements:
 | API             | Flask                                 |
 | Evaluation      | LLM-as-a-Judge                        |
 | Data            | Harvard CS249r textbook               |
-
+```
 ---
 
 # Conclusion
