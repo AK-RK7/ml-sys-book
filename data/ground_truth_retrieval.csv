@@ -1,0 +1,437 @@
+doc_id,chunk_id,source,question
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0122,vol1/data_selection/data_selection.qmd,What is the assumed size for a standard small random-read in the RandomAccessPenalty class?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0122,vol1/data_selection/data_selection.qmd,How is the HDD random throughput (hdd_random_q) calculated in the RandomAccessPenalty class?
+vol1_backmatter_appendix_data,vol1_backmatter_appendix_data_0006,vol1/backmatter/appendix_data.qmd,What is the formula for the ideal line-rate transfer time?
+vol1_backmatter_appendix_data,vol1_backmatter_appendix_data_0006,vol1/backmatter/appendix_data.qmd,"According to the passage, what factors increase the lower bounds provided by @Tbl-data-gravity?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0099,vol1/model_serving/model_serving.qmd,What is the KV Cache used for in generative inference?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0099,vol1/model_serving/model_serving.qmd,How does memory usage differ between traditional models and LLMs according to the passage?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0009,vol1/model_compression/model_compression.qmd,What are the three techniques mentioned as part of model compression?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0009,vol1/model_compression/model_compression.qmd,What is the primary objective of model compression?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0062,vol1/ml_systems/ml_systems.qmd,What is the formula used to calculate vi_gpu_seconds_day?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0062,vol1/ml_systems/ml_systems.qmd,How is vi_peak_ratio computed according to the passage?
+vol1_frontmatter__notation_body,vol1_frontmatter__notation_body_0010,vol1/frontmatter/_notation_body.qmd,What does the symbol $N_{\text{heads}}$ represent?
+vol1_frontmatter__notation_body,vol1_frontmatter__notation_body_0010,vol1/frontmatter/_notation_body.qmd,Which symbol should be used for a layer index to avoid colliding with the symbols for loss and latency?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0049,vol1/data_selection/data_selection.qmd,How does dataset quality affect the magnitude of epoch reduction in curriculum learning according to the passage?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0049,vol1/data_selection/data_selection.qmd,What are the characteristics and preferred scenarios for anti‑curriculum (hard examples first) versus self‑paced learning as described in the passage?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0066,vol2/network_fabrics/network_fabrics.qmd,What performance range does `iperf` typically report for kernel-based TCP/IP due to CPU-managed buffer copies and context switches?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0066,vol2/network_fabrics/network_fabrics.qmd,Which suite of tools should be used for validation protocols to match the data path of RDMA workloads?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0122,vol1/data_engineering/data_engineering.qmd,What pattern do data lakes use that defers schema definitions until the point of reading?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0122,vol1/data_engineering/data_engineering.qmd,"According to the passage, when do data lakes earn their place?"
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0056,vol2/responsible_ai/responsible_ai.qmd,What line width is set for the 'planet' style?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0056,vol2/responsible_ai/responsible_ai.qmd,Which TikZ style defines a picture of a bell?
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0059,vol2/collective_communication/collective_communication.qmd,How is the total message size in bytes calculated for a gradient vector of dimension d_grad quantized to INT8 with block size b_block?
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0059,vol2/collective_communication/collective_communication.qmd,What effective compression ratio is achieved when the block size b_block is 128?
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0032,vol1/backmatter/appendix_machine.qmd,What are the four storage hierarchy components listed in the passage?
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0032,vol1/backmatter/appendix_machine.qmd,"According to the BANDWIDTH-LATENCY SETUP comment, which three values are intended to be shown?"
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0016,vol1/backmatter/appendix_machine.qmd,What function is used to format gustafson_8_speedup_mult_str with precision 2 and no commas?
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0016,vol1/backmatter/appendix_machine.qmd,From which module is the function calc_transformer_training_flops imported?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0177,vol1/data_engineering/data_engineering.qmd,What metric is used to assess technical debt according to the passage?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0177,vol1/data_engineering/data_engineering.qmd,What does @Tbl-data-debt-metrics provide to make data debt trackable?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0025,vol1/ml_systems/ml_systems.qmd,What three components does the iron law sum to compute the total time T required for a workload?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0025,vol1/ml_systems/ml_systems.qmd,"According to the passage, what are two effects of increasing batch size on workload behavior?"
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0000,vol1/ml_workflow/ml_workflow.qmd,What components are connected in the ML workflow loop described in the passage?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0000,vol1/ml_workflow/ml_workflow.qmd,What file formats are mentioned for the images of the ML workflow blueprint?
+vol2_fleet_orchestration_fleet_orchestration,vol2_fleet_orchestration_fleet_orchestration_0023,vol2/fleet_orchestration/fleet_orchestration.qmd,What are the three approaches the scheduler can take when a node's heartbeat is missing?
+vol2_fleet_orchestration_fleet_orchestration,vol2_fleet_orchestration_fleet_orchestration_0023,vol2/fleet_orchestration/fleet_orchestration.qmd,Which approach risks wasted GPU time if the node is truly dead?
+vol2_security_privacy_security_privacy,vol2_security_privacy_security_privacy_0012,vol2/security_privacy/security_privacy.qmd,What trade-off does differential privacy introduce in machine learning training according to the passage?
+vol2_security_privacy_security_privacy,vol2_security_privacy_security_privacy_0012,vol2/security_privacy/security_privacy.qmd,How does privacy in machine learning differ from confidentiality as described in the passage?
+vol1_backmatter_appendix_data,vol1_backmatter_appendix_data_0019,vol1/backmatter/appendix_data.qmd,Which divergence measure mentioned in the passage is asymmetric?
+vol1_backmatter_appendix_data,vol1_backmatter_appendix_data_0019,vol1/backmatter/appendix_data.qmd,What metric is described as symmetrizing the asymmetry between the two KL divergences?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0118,vol2/ops_scale/ops_scale.qmd,What problem did Uber encounter before adopting Michelangelo that involved data scientists and engineering teams?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0118,vol2/ops_scale/ops_scale.qmd,Which three use cases are mentioned as being supported by the Michelangelo platform?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0104,vol1/ml_ops/ml_ops.qmd,What techniques do MLOps workflows incorporate to explore the design space efficiently?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0104,vol1/ml_ops/ml_ops.qmd,"According to the example, what event triggers a retraining job in the Jenkins pipeline?"
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0063,vol2/network_fabrics/network_fabrics.qmd,What is the maximum allowed value for speedup_pct according to the guard condition?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0063,vol2/network_fabrics/network_fabrics.qmd,Which functions are imported from mlsysim.fmt for output formatting?
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0039,vol2/collective_communication/collective_communication.qmd,For which message sizes is the practical impact of SHARP's latency reduction most pronounced?
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0039,vol2/collective_communication/collective_communication.qmd,What improvements does @graham2020 report when SHARP Streaming-Aggregation is enabled on HDR/Quantum InfiniBand switches for PyTorch workloads?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0039,vol1/ml_systems/ml_systems.qmd,Which function is used to format the TPU v4 chip count in the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0039,vol1/ml_systems/ml_systems.qmd,What unit is specified when formatting the power of the TPUv4_4096 pod?
+vol2_conclusion_conclusion,vol2_conclusion_conclusion_0005,vol2/conclusion/conclusion.qmd,What mechanisms does the distribution layer provide for turning many machines into a useful training or serving system?
+vol2_conclusion_conclusion,vol2_conclusion_conclusion_0005,vol2/conclusion/conclusion.qmd,What final constraint does the responsible-fleet layer add to a distributed ML system?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0046,vol2/responsible_ai/responsible_ai.qmd,What does the guard check compare in the passage?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0046,vol2/responsible_ai/responsible_ai.qmd,"According to the passage, which group's predicted positives must be more reliable?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0124,vol1/model_serving/model_serving.qmd,Which formatting function is used to convert the V100 price increase multiplier to a string?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0124,vol1/model_serving/model_serving.qmd,What precision is specified when formatting the T4 cost string as USD?
+frontmatter_index,frontmatter_index_0002,frontmatter/index.qmd,What can you design after working through the volumes mentioned in the passage?
+frontmatter_index,frontmatter_index_0002,frontmatter/index.qmd,Who are the three groups of people the passage says the resource is intended for?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0104,vol1/hw_acceleration/hw_acceleration.qmd,What does each cycle demand in terms of data for the systolic array?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0104,vol1/hw_acceleration/hw_acceleration.qmd,What becomes limiting when processing large transformer models on the TPU v4 despite its high bandwidth?
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0065,vol2/collective_communication/collective_communication.qmd,How is the variable 'flat_time' calculated in the code?
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0065,vol2/collective_communication/collective_communication.qmd,Which terms are added together to compute 'hier_total'?
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0062,vol1/responsible_engr/responsible_engr.qmd,"According to the passage, what specific fairness metric and its allowed deviation are mentioned for the algorithm axis?"
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0062,vol1/responsible_engr/responsible_engr.qmd,What are three types of constraints that bound the machine axis as described in the passage?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0122,vol1/model_serving/model_serving.qmd,What is the assumed hourly cost of the g4dn.xlarge (T4) instance in the passage?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0122,vol1/model_serving/model_serving.qmd,"According to the passage, how many items per second can the V100 (p3.2xlarge) process?"
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0070,vol1/hw_acceleration/hw_acceleration.qmd,What three passes through data are required for batch normalization according to the passage?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0070,vol1/hw_acceleration/hw_acceleration.qmd,"According to the passage, why is the cost of a standalone ReLU operation dominated more by memory operations than arithmetic?"
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0239,vol1/ml_ops/ml_ops.qmd,What four potential problems can be identified when diagnosing a degrading model according to the passage?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0239,vol1/ml_ops/ml_ops.qmd,"What negative outcome does the passage describe for treating production ML as ""deploy and forget""?"
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0032,vol1/responsible_engr/responsible_engr.qmd,What dimensions does the @Tbl-failure-modes framework use to categorize failures?
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0032,vol1/responsible_engr/responsible_engr.qmd,Which types of failures trigger immediate alerts through existing infrastructure?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0047,vol1/data_selection/data_selection.qmd,What model and pacing strategy are used for the CIFAR-10 dataset?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0047,vol1/data_selection/data_selection.qmd,What is the epoch reduction value for the MentorNet (noisy) pacing strategy on ImageNet?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0169,vol1/data_engineering/data_engineering.qmd,Which stages are included in a fully assembled data pipeline that might suggest data engineering work is 'done'?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0169,vol1/data_engineering/data_engineering.qmd,What are some reasons why production systems need ongoing maintenance despite having a complete pipeline?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0009,vol2/backmatter/appendix_assumptions.qmd,"According to the passage, how does failure handling shift between the 256‑GPU and 8,192‑GPU tiers?"
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0009,vol2/backmatter/appendix_assumptions.qmd,"What does the passage say about the difference in failure frequency between a 256‑GPU cluster and a 100,000‑GPU cluster?"
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0002,vol1/data_selection/data_selection.qmd,What three techniques are compared for reducing redundant pretraining data?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0002,vol1/data_selection/data_selection.qmd,Which inequality is applied to test whether selection overhead beats full-dataset training cost?
+vol1_training_training,vol1_training_training_0034,vol1/training/training.qmd,What is the practical compromise achieved by mini-batch gradient descent compared to full-batch and stochastic methods?
+vol1_training_training,vol1_training_training_0034,vol1/training/training.qmd,How does the batch size B influence computational efficiency and memory requirements in mini-batch processing?
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0092,vol1/responsible_engr/responsible_engr.qmd,What is the primary fairness risk listed for the GPT-2 (Bandwidth Hog) archetype?
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0092,vol1/responsible_engr/responsible_engr.qmd,Which key evaluation metric is suggested for assessing the DS-CNN (Tiny Constraint) archetype?
+vol2_security_privacy_security_privacy,vol2_security_privacy_security_privacy_0026,vol2/security_privacy/security_privacy.qmd,What are the domain limits for the plot of 6.75*exp(-x^2/2) in the right graph?
+vol2_security_privacy_security_privacy,vol2_security_privacy_security_privacy_0026,vol2/security_privacy/security_privacy.qmd,"Which color is used for the arrow that points to the label ""0101"" in the right graph?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0012,vol1/model_serving/model_serving.qmd,What approach did Facebook take toward inference as described in the passage?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0012,vol1/model_serving/model_serving.qmd,"According to the passage, how does serving differ from training at fleet scale?"
+vol1_backmatter_glossary_glossary,vol1_backmatter_glossary_glossary_0082,vol1/backmatter/glossary/glossary.qmd,What is NVIDIA's NVLink primarily used for in intra-node communication?
+vol1_backmatter_glossary_glossary,vol1_backmatter_glossary_glossary_0082,vol1/backmatter/glossary/glossary.qmd,Which type of database approach is optimized for complex analytical queries across large datasets?
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0067,vol2/data_storage/data_storage.qmd,What does the storage service do when a fragment needed for a shard is on a failed disk?
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0067,vol2/data_storage/data_storage.qmd,Why does object storage have higher tail latency compared to local NVMe according to the passage?
+vol2_introduction_introduction,vol2_introduction_introduction_0072,vol2/introduction/introduction.qmd,"According to the passage, what is the approximate synchronization size per endpoint in gigabytes?"
+vol2_introduction_introduction,vol2_introduction_introduction_0072,vol2/introduction/introduction.qmd,What is the approximate energy tax per endpoint in joules as stated in the passage?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0079,vol1/frameworks/frameworks.qmd,Which model achieves the highest number of examples per second when using TensorRT?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0079,vol1/frameworks/frameworks.qmd,What is the compile time range (in seconds) for the GPT-2 (124M) model?
+vol2_README,vol2_README_0003,vol2/README.md,Which chapter covers how to monitor and operate ML infrastructure?
+vol2_README,vol2_README_0003,vol2/README.md,"What is the core question for the ""Network Fabrics"" chapter?"
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0055,vol1/data_engineering/data_engineering.qmd,What is the cost range for a cloud GPU training hour?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0055,vol1/data_engineering/data_engineering.qmd,Which operation has a cost range of $15–50?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0043,vol2/ops_scale/ops_scale.qmd,What was the P99 latency before it increased to 125 ms?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0043,vol2/ops_scale/ops_scale.qmd,By how much did the daily cost rise after the model update?
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0108,vol1/nn_architectures/nn_architectures.qmd,"According to the passage, what is the computational and memory cost complexity introduced by the Transformer's attention mechanism?"
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0108,vol1/nn_architectures/nn_architectures.qmd,What was the reported context window size limit for GPT-3 due to the quadratic growth of attention?
+vol3_README,vol3_README_0004,vol3/README.md,"According to the note on the title, why should the word ""Learning"" be kept in the name?"
+vol3_README,vol3_README_0004,vol3/README.md,What condition does the passage give for the volume to earn durability?
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0089,vol2/sustainable_ai/sustainable_ai.qmd,What is the per-query latency reduction achieved by edge inference compared to cloud inference?
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0089,vol2/sustainable_ai/sustainable_ai.qmd,How much continuous power does Tesla's FSD computer draw while driving?
+vol1_training_training,vol1_training_training_0056,vol1/training/training.qmd,What does the learning rate scheduling hook adjust during training?
+vol1_training_training,vol1_training_training_0056,vol1/training/training.qmd,Does the learning rate scheduling hook add per-parameter state to the optimizer?
+vol2_performance_engineering_performance_engineering,vol2_performance_engineering_performance_engineering_0051,vol2/performance_engineering/performance_engineering.qmd,Which technique reduces the bytes per memory transaction?
+vol2_performance_engineering_performance_engineering,vol2_performance_engineering_performance_engineering_0051,vol2/performance_engineering/performance_engineering.qmd,What does FlashAttention remove according to the passage?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0051,vol1/ml_ops/ml_ops.qmd,What root cause do boundary erosion and correction cascades share according to the passage?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0051,vol1/ml_ops/ml_ops.qmd,How do machine learning dependencies differ from traditional software dependencies as described in the passage?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0012,vol1/conclusion/conclusion.qmd,"According to the passage, into which four areas do architecture choices cascade?"
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0012,vol1/conclusion/conclusion.qmd,How many Lighthouse Models are introduced in the referenced section?
+vol1_backmatter_glossary_glossary,vol1_backmatter_glossary_glossary_0102,vol1/backmatter/glossary/glossary.qmd,What are soft targets and what role do they play in knowledge distillation?
+vol1_backmatter_glossary_glossary,vol1_backmatter_glossary_glossary_0102,vol1/backmatter/glossary/glossary.qmd,How is sparsity defined in the context of tensors according to the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0100,vol1/ml_systems/ml_systems.qmd,What do sensor integration and on-device processing enable according to the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0100,vol1/ml_systems/ml_systems.qmd,Why are always-on ML features described as incurring a 'battery tax'?
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0077,vol1/nn_architectures/nn_architectures.qmd,What architectural constraint of CNNs reduces the hypothesis space they must search compared to fully connected networks?
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0077,vol1/nn_architectures/nn_architectures.qmd,"According to the passage, what prior knowledge about visual data do CNNs encode by restricting connectivity to local neighborhoods and sharing parameters across spatial positions?"
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0063,vol1/data_engineering/data_engineering.qmd,Why can't the quality pillar be satisfied by scale alone according to the passage?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0063,vol1/data_engineering/data_engineering.qmd,What steps must teams take to address legal and ethical constraints when scraping user-generated content?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0002,vol1/ml_workflow/ml_workflow.qmd,"According to the passage, how many machine learning lifecycle stages are described?"
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0002,vol1/ml_workflow/ml_workflow.qmd,What four criteria are listed for evaluating trade-offs across the ML lifecycle stages?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0037,vol1/data_selection/data_selection.qmd,What is the guarantee provided by the coreset method according to the passage?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0037,vol1/data_selection/data_selection.qmd,How does a coreset differ from random downsampling as described in the text?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0010,vol2/backmatter/appendix_assumptions.qmd,What does the network fabric determine for gradient synchronization and pipeline parallelism across node boundaries?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0010,vol2/backmatter/appendix_assumptions.qmd,Which interconnect tiers are listed in the network assumptions for distributed training and inference?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0123,vol1/model_serving/model_serving.qmd,What formula is used to calculate ca_cpu_images_per_hour_value?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0123,vol1/model_serving/model_serving.qmd,How is ca_v100_price_increase_value determined according to the passage?
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0018,vol2/data_storage/data_storage.qmd,Why does the accelerator process data in batches?
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0018,vol2/data_storage/data_storage.qmd,What sets the bandwidth requirement for all lower tiers?
+vol1_training_training,vol1_training_training_0082,vol1/training/training.qmd,Why does doubling the hardware's peak TFLOP/s not improve performance for memory-bound operations such as LayerNorm or Softmax?
+vol1_training_training,vol1_training_training_0082,vol1/training/training.qmd,How does mixed-precision training with FP16/BF16 increase the system's ability to utilize its peak computational capability?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0129,vol1/hw_acceleration/hw_acceleration.qmd,"According to the passage, how long does real ResNet-50 inference take?"
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0129,vol1/hw_acceleration/hw_acceleration.qmd,What does the passage say about the energy cost of moving data from memory compared to arithmetic?
+vol1_training_training,vol1_training_training_0126,vol1/training/training.qmd,What is the total preprocessing time in milliseconds as defined in the passage?
+vol1_training_training,vol1_training_training_0126,vol1/training/training.qmd,How many prefetch buffer batches are calculated in the passage?
+vol1_training_training,vol1_training_training_0004,vol1/training/training.qmd,What is the FLOPs formula for the Feed-Forward Network as described in the passage?
+vol1_training_training,vol1_training_training_0004,vol1/training/training.qmd,How does the FLOPs count for the Attn × V operation compare to that for the QK operation?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0192,vol1/ml_ops/ml_ops.qmd,What does @Tbl-ml-ops-principle-mapping lay out for the two environments?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0192,vol1/ml_ops/ml_ops.qmd,"In the Oura-inspired design, what does polysomnography (PSG) refer to?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0033,vol1/model_serving/model_serving.qmd,Which type of serving system optimizes for throughput and uses dynamic batching?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0033,vol1/model_serving/model_serving.qmd,What constraints do TinyML systems operate under according to the passage?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0027,vol1/conclusion/conclusion.qmd,What is the goal of the EDGE-VS-H100 reference ratios section described in the passage?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0027,vol1/conclusion/conclusion.qmd,"According to the passage, how are the H100 reference ratios calculated?"
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0013,vol2/sustainable_ai/sustainable_ai.qmd,What is the average annual electricity consumption of a U.S. household according to the passage?
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0013,vol2/sustainable_ai/sustainable_ai.qmd,How many households' annual electricity consumption does a single GPT-3 verified training run equal?
+vol1_introduction_introduction,vol1_introduction_introduction_0026,vol1/introduction/introduction.qmd,What were the two fundamental scaling barriers encountered by the pre‑machine‑learning paradigms described in the passage?
+vol1_introduction_introduction,vol1_introduction_introduction_0026,vol1/introduction/introduction.qmd,"According to the passage, why did expert systems hit the knowledge bottleneck?"
+vol2_introduction_introduction,vol2_introduction_introduction_0055,vol2/introduction/introduction.qmd,How did OpenAI decide on the model size and token budget when scaling GPT-3?
+vol2_introduction_introduction,vol2_introduction_introduction_0055,vol2/introduction/introduction.qmd,"Within well-defined operational regimes, what factor predominantly influences model performance according to the passage?"
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0008,vol1/model_compression/model_compression.qmd,Which models are identified as the Lighthouse Models for vision workloads in the passage?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0008,vol1/model_compression/model_compression.qmd,What type of neural network is used as the keyword spotter for TinyML deployment according to the passage?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0135,vol1/hw_acceleration/hw_acceleration.qmd,"What physical limitation, noted since 1945, is identified as the underlying cause of the energy wall in computing?"
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0135,vol1/hw_acceleration/hw_acceleration.qmd,"According to the passage, how many times more energy does accessing a value from external DRAM require compared to performing an 8-bit integer operation on that value?"
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0090,vol2/data_storage/data_storage.qmd,Which data format has the lowest per-sample overhead according to the table?
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0090,vol2/data_storage/data_storage.qmd,Which data format offers excellent streaming performance but does not support random access?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0005,vol2/backmatter/appendix_assumptions.qmd,What is the formula used to calculate the total facility power in the passage?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0005,vol2/backmatter/appendix_assumptions.qmd,"According to the passage, what can dominate the emissions difference for the same hardware, model, and training duration?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0057,vol1/model_serving/model_serving.qmd,What is the approximate total postprocessing time mentioned in the example?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0057,vol1/model_serving/model_serving.qmd,"According to the passage, what must production systems' outputs conform to?"
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0083,vol2/ops_scale/ops_scale.qmd,"According to the passage, how much accuracy gain is achieved when moving from a small to a medium model, and what is the associated increase in training cost?"
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0083,vol2/ops_scale/ops_scale.qmd,What is the accuracy improvement and training cost increase when moving from a medium to a large model as described in the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0033,vol1/ml_systems/ml_systems.qmd,"Who coined the term ""memory wall"" and in what year?"
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0033,vol1/ml_systems/ml_systems.qmd,"In the iron law mentioned in the passage, where does memory bandwidth appear in the data term formula?"
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0143,vol1/nn_computation/nn_computation.qmd,What batch size is specified for calculating activation storage in the 784→512→256→10 network variant?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0143,vol1/nn_computation/nn_computation.qmd,"According to the passage, how are the total trainable parameters for the 784→512→256→10 variant calculated?"
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0062,vol1/benchmarking/benchmarking.qmd,"What potential issue arises when a metric captures accuracy but ignores latency, according to the passage?"
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0062,vol1/benchmarking/benchmarking.qmd,How does the passage describe the difference between the mathematical definition of a metric and its use in machine learning?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0110,vol1/ml_systems/ml_systems.qmd,What label appears at the 90-degree tick on the polar axis?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0110,vol1/ml_systems/ml_systems.qmd,Which machine learning category has a coordinate value of 10 at the 270-degree angle?
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0034,vol1/backmatter/appendix_machine.qmd,What unit and precision are specified when formatting the crossover_data variable in the code?
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0034,vol1/backmatter/appendix_machine.qmd,"Which formula does the bandwidth-latency example aim to illustrate, as stated in the comment block?"
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0071,vol1/nn_computation/nn_computation.qmd,"According to the passage, what advantage does parameter reuse provide in deep networks compared to shallow networks?"
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0071,vol1/nn_computation/nn_computation.qmd,"How do depth and width differ in their contribution to representational capacity, as described in the passage?"
+vol2_backmatter_appendix_inference,vol2_backmatter_appendix_inference_0004,vol2/backmatter/appendix_inference.qmd,Who developed queuing theory and in what year?
+vol2_backmatter_appendix_inference,vol2_backmatter_appendix_inference_0004,vol2/backmatter/appendix_inference.qmd,What equation models the service time for a batch of B requests?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0039,vol1/model_serving/model_serving.qmd,"According to the passage, what do load balancers distribute requests across?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0039,vol1/model_serving/model_serving.qmd,What effect does a noisy neighbor have on workloads sharing the same node?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0146,vol1/benchmarking/benchmarking.qmd,What does each cell in the D·A·M Bottleneck Diagnostic Matrix describe?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0146,vol1/benchmarking/benchmarking.qmd,"When performance stalls, what does the matrix turn the first diagnostic move into?"
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0204,vol1/ml_ops/ml_ops.qmd,"What constraints, in addition to accuracy, govern edge MLOps according to the passage?"
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0204,vol1/ml_ops/ml_ops.qmd,How frequently does retraining occur for the DS-CNN (Tiny Constraint) archetype mentioned in the passage?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0167,vol2/ops_scale/ops_scale.qmd,"According to the passage, how frequently must fraud detection models be updated?"
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0167,vol2/ops_scale/ops_scale.qmd,What deployment strategy is recommended for LLMs in the passage?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0064,vol1/nn_computation/nn_computation.qmd,Which hardware technologies are mentioned as providing the parallel processing capabilities needed for efficient neural network computation?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0064,vol1/nn_computation/nn_computation.qmd,What software advances are described as helping reduce the gap between research and production?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0217,vol1/ml_ops/ml_ops.qmd,Which panel captures the patient-clinician coordination that emerges once routine data collection moves to the AI loop?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0217,vol1/ml_ops/ml_ops.qmd,What does the clinician oversight loop provide to the clinician according to the passage?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0118,vol2/fault_tolerance/fault_tolerance.qmd,What are the three types of health checks described for ML serving?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0118,vol2/fault_tolerance/fault_tolerance.qmd,What conditions must be met before a replica is considered ready in ML serving?
+vol2_backmatter_appendix_fleet,vol2_backmatter_appendix_fleet_0015,vol2/backmatter/appendix_fleet.qmd,"In which category is the metric ""Goodput"" listed, and what is its described use?"
+vol2_backmatter_appendix_fleet,vol2_backmatter_appendix_fleet_0015,vol2/backmatter/appendix_fleet.qmd,"What is the purpose of the ""AI rack"" metric under the Power & sustainability category?"
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0062,vol2/data_storage/data_storage.qmd,"What type of storage provides a durable, cost-effective foundation at the scale of petabytes?"
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0062,vol2/data_storage/data_storage.qmd,"How do object storage services retrieve objects, and how does this differ from file systems?"
+vol1_frontmatter_acknowledgements,vol1_frontmatter_acknowledgements_0001,vol1/frontmatter/acknowledgements.qmd,Who co-taught the HarvardX TinyML online course with Laurence Moroney?
+vol1_frontmatter_acknowledgements,vol1_frontmatter_acknowledgements_0001,vol1/frontmatter/acknowledgements.qmd,Which platform did Zach Shelby open for student use?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0015,vol1/model_serving/model_serving.qmd,What does the SLO define that influences architectural decisions in the serving stack?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0015,vol1/model_serving/model_serving.qmd,"According to the passage, what stages are included in the inference pipeline before producing final outputs?"
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0023,vol1/model_compression/model_compression.qmd,What value is assigned to the key \channelcolor in the \pgfkeys configuration?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0023,vol1/model_compression/model_compression.qmd,"In the \foreach loop, for how many iterations is the 'dashed' option specified?"
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0119,vol2/ops_scale/ops_scale.qmd,What operational challenge did Uber face related to model development across many product teams?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0119,vol2/ops_scale/ops_scale.qmd,"What common workflows are included in Michelangelo's ""Golden Path"" for product teams?"
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0014,vol2/network_fabrics/network_fabrics.qmd,What type of flow is characteristic of the ML reality according to the passage?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0014,vol2/network_fabrics/network_fabrics.qmd,Which performance metric is highlighted for the ML reality in the passage?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0155,vol1/model_compression/model_compression.qmd,"According to the passage, what does quantization spend?"
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0155,vol1/model_compression/model_compression.qmd,Why can a technique that pays off on a phone be worthless on a data‑center GPU?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0007,vol2/responsible_ai/responsible_ai.qmd,What did early software engineering systems prioritize according to the passage?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0007,vol2/responsible_ai/responsible_ai.qmd,In what ways does the passage say responsible AI failures differ from conventional software failures?
+vol2_compute_infrastructure_compute_infrastructure,vol2_compute_infrastructure_compute_infrastructure_0031,vol2/compute_infrastructure/compute_infrastructure.qmd,"According to the passage, how does the speed of communication between chiplets within a package compare to communication between packages and communication within a single monolithic die?"
+vol2_compute_infrastructure_compute_infrastructure,vol2_compute_infrastructure_compute_infrastructure_0031,vol2/compute_infrastructure/compute_infrastructure.qmd,What method do GPU vendors use to hide the latency penalty caused by die-to-die communication from programmers?
+vol2_performance_engineering_performance_engineering,vol2_performance_engineering_performance_engineering_0102,vol2/performance_engineering/performance_engineering.qmd,What expression is used to compute fleet_peak_flops_per_step?
+vol2_performance_engineering_performance_engineering,vol2_performance_engineering_performance_engineering_0102,vol2/performance_engineering/performance_engineering.qmd,How is scaling_tax calculated according to the passage?
+vol2_backmatter_appendix_fleet,vol2_backmatter_appendix_fleet_0045,vol2/backmatter/appendix_fleet.qmd,How many GPUs are used in Scenario 2 for the 350M model?
+vol2_backmatter_appendix_fleet,vol2_backmatter_appendix_fleet_0045,vol2/backmatter/appendix_fleet.qmd,What is the assumed compute time for the 350M model in seconds?
+vol1_training_training,vol1_training_training_0059,vol1/training/training.qmd,What does the backpropagation algorithm compute?
+vol1_training_training,vol1_training_training_0059,vol1/training/training.qmd,"According to the passage, what mathematical principle underlies gradient computation in backpropagation?"
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0030,vol1/ml_systems/ml_systems.qmd,What is a Workload Archetype as defined in the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0030,vol1/ml_systems/ml_systems.qmd,Why can misidentifying the workload archetype lead to wasted optimization effort?
+vol1_frontmatter__notation_body,vol1_frontmatter__notation_body_0000,vol1/frontmatter/_notation_body.qmd,What does the symbol B represent for a machine learning researcher?
+vol1_frontmatter__notation_body,vol1_frontmatter__notation_body_0000,vol1/frontmatter/_notation_body.qmd,What does the symbol B represent for a hardware engineer?
+vol2_frontmatter__notation_distributed,vol2_frontmatter__notation_distributed_0004,vol2/frontmatter/_notation_distributed.qmd,What does LogGP refine in the \alpha-\beta model?
+vol2_frontmatter__notation_distributed,vol2_frontmatter__notation_distributed_0004,vol2/frontmatter/_notation_distributed.qmd,"According to the passage, what does the book use for the highest‑collision term?"
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0071,vol2/fault_tolerance/fault_tolerance.qmd,Why is possessing a valid checkpoint alone insufficient for recovery when the number of workers changes?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0071,vol2/fault_tolerance/fault_tolerance.qmd,What steps must the system take after detecting a failure before training can resume?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0154,vol1/data_engineering/data_engineering.qmd,What is the key challenge in managing dataset versions during development according to the passage?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0154,vol1/data_engineering/data_engineering.qmd,How does the metadata-pointer mechanism help with dataset versioning and storage?
+vol1_backmatter_glossary_glossary,vol1_backmatter_glossary_glossary_0112,vol1/backmatter/glossary/glossary.qmd,What three weight values are typically used in ternarization?
+vol1_backmatter_glossary_glossary,vol1_backmatter_glossary_glossary_0112,vol1/backmatter/glossary/glossary.qmd,What does thermal throttling do in mobile and embedded devices?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0108,vol1/data_selection/data_selection.qmd,What is the purpose of feature alignment methods in domain adaptation?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0108,vol1/data_selection/data_selection.qmd,"According to the passage, what approach often yields the best results: using synthetic data alone, real data alone, or mixing both?"
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0049,vol1/hw_acceleration/hw_acceleration.qmd,What constraint does the open ISA of RISC-V remove for hardware teams adding custom ML instructions?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0049,vol1/hw_acceleration/hw_acceleration.qmd,What is the trade‑off of using RISC‑V ML accelerators regarding software ecosystem maturity?
+vol3_OUTLINE,vol3_OUTLINE_0004,vol3/OUTLINE.md,"Why does the passage use the term ""coordination"" instead of ""orchestration""?"
+vol3_OUTLINE,vol3_OUTLINE_0004,vol3/OUTLINE.md,What topics are listed as out of scope for the multi-agent coordination section?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0107,vol1/hw_acceleration/hw_acceleration.qmd,What precision formats were added to hardware after early GPUs supported only FP32?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0107,vol1/hw_acceleration/hw_acceleration.qmd,What does lowering precision from FP32 to FP16 to INT8 trade off according to the passage?
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0061,vol2/collective_communication/collective_communication.qmd,"According to the passage, what is the main difference between quantization and sparsification in gradient communication?"
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0061,vol2/collective_communication/collective_communication.qmd,"If top‑k sparsification uses K_{top}=0.001\times d_{\text{grad}}, what compression factor does this achieve?"
+vol2_robust_ai_robust_ai,vol2_robust_ai_robust_ai_0034,vol2/robust_ai/robust_ai.qmd,What fundamental mismatch contributes to the effectiveness of these attacks?
+vol2_robust_ai_robust_ai,vol2_robust_ai_robust_ai_0034,vol2/robust_ai/robust_ai.qmd,How do adversarial perturbations exploit the geometry of neural network decision boundaries?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0124,vol1/benchmarking/benchmarking.qmd,What kind of knowledge is required to address feature coverage challenges?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0124,vol1/benchmarking/benchmarking.qmd,"According to the passage, who should collaborate to handle feature coverage issues?"
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0049,vol2/backmatter/appendix_assumptions.qmd,What does the catalog map each appendix section to?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0049,vol2/backmatter/appendix_assumptions.qmd,Which example fields are mentioned as containing provenance metadata?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0023,vol2/backmatter/appendix_assumptions.qmd,What is the placeholder expression for the InfiniBand NDR sustained bandwidth (β) value in the passage?
+vol2_backmatter_appendix_assumptions,vol2_backmatter_appendix_assumptions_0023,vol2/backmatter/appendix_assumptions.qmd,"According to the passage, which communication protocol's startup latency (α) is listed with the placeholder `{python} CommModelConstants.TCP_LATENCY_US_str`?"
+vol2_robust_ai_robust_ai,vol2_robust_ai_robust_ai_0030,vol2/robust_ai/robust_ai.qmd,What are the three types of shift distinguished in the shift taxonomy and which probability does each change affect?
+vol2_robust_ai_robust_ai,vol2_robust_ai_robust_ai_0030,vol2/robust_ai/robust_ai.qmd,Why is concept drift considered structurally more expensive to remediate than data drift when the same volume of fresh data is available?
+vol2_distributed_training_distributed_training,vol2_distributed_training_distributed_training_0019,vol2/distributed_training/distributed_training.qmd,What type of cluster is used to train the model?
+vol2_distributed_training_distributed_training,vol2_distributed_training_distributed_training_0019,vol2/distributed_training/distributed_training.qmd,What is the per‑GPU compute time according to the passage?
+vol2_introduction_introduction,vol2_introduction_introduction_0014,vol2/introduction/introduction.qmd,What is the Machine Learning Fleet?
+vol2_introduction_introduction,vol2_introduction_introduction_0014,vol2/introduction/introduction.qmd,Which components are mentioned as part of the Machine Learning Fleet?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0062,vol1/model_compression/model_compression.qmd,Which faces in the drawing are specified with fill=none?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0062,vol1/model_compression/model_compression.qmd,What mathematical object is placed at the position right of the midpoint between points G3 and D3?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0053,vol2/ops_scale/ops_scale.qmd,What does the platform own at Level 3?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0053,vol2/ops_scale/ops_scale.qmd,"At which level does the platform team accept responsibility for policy, reliability, and economic visibility?"
+vol1_backmatter_appendix_algorithm,vol1_backmatter_appendix_algorithm_0017,vol1/backmatter/appendix_algorithm.qmd,"According to the passage, what is the time complexity of calling `contiguous()` on a noncontiguous tensor?"
+vol1_backmatter_appendix_algorithm,vol1_backmatter_appendix_algorithm_0017,vol1/backmatter/appendix_algorithm.qmd,"In KV-cached generation, how does the attention FLOP cost scale per token compared to full‑sequence training?"
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0148,vol1/data_selection/data_selection.qmd,What condition does the guard check enforce between curated_accuracy_pct and raw_accuracy_pct?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0148,vol1/data_selection/data_selection.qmd,How is the variable `savings` computed in the passage?
+vol2_introduction_introduction,vol2_introduction_introduction_0078,vol2/introduction/introduction.qmd,What equation is used to calculate realized_speedup in the linear scaling fallacy check?
+vol2_introduction_introduction,vol2_introduction_introduction_0078,vol2/introduction/introduction.qmd,"Which module is imported to provide the fmt, check, fmt_multiple, and fmt_percent functions?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0031,vol1/model_serving/model_serving.qmd,What are the three deployment contexts compared for serving the ResNet-50 architecture?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0031,vol1/model_serving/model_serving.qmd,"How does the serving strategy for ResNet-50 differ between cloud serving, mobile serving, and TinyML?"
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0061,vol1/responsible_engr/responsible_engr.qmd,What are the three D·A·M axes that Responsible AI Engineering operationalizes as testable constraints?
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0061,vol1/responsible_engr/responsible_engr.qmd,Which infrastructure bounds are mentioned as part of Responsible AI Engineering's constraints?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0123,vol1/data_selection/data_selection.qmd,"What inequality relationship must hold between hdd_penalty, sata_penalty, and nvme_penalty according to the passage?"
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0123,vol1/data_selection/data_selection.qmd,What condition is required for roi_pct to justify active learning as stated in the passage?
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0111,vol1/nn_architectures/nn_architectures.qmd,"According to the passage, how does attention shift the bottleneck in machine learning systems compared to RNNs?"
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0111,vol1/nn_architectures/nn_architectures.qmd,What strategy do tiled algorithms such as FlashAttention use to avoid storing the full O(S^2) attention matrix?
+vol2_compute_infrastructure_compute_infrastructure,vol2_compute_infrastructure_compute_infrastructure_0083,vol2/compute_infrastructure/compute_infrastructure.qmd,How many floating-point operations are required to generate a single token from Llama-3 70B?
+vol2_compute_infrastructure_compute_infrastructure,vol2_compute_infrastructure_compute_infrastructure_0083,vol2/compute_infrastructure/compute_infrastructure.qmd,What is the amount of weight data that must be loaded from HBM for each token?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0092,vol1/hw_acceleration/hw_acceleration.qmd,What mismatch exists between the computational graph and the physical silicon as described in the passage?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0092,vol1/hw_acceleration/hw_acceleration.qmd,What is the purpose of tiling according to the passage?
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0020,vol2/data_storage/data_storage.qmd,What is the HBM memory capacity of the GPU used to train the 175B parameter model?
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0020,vol2/data_storage/data_storage.qmd,Across how many nodes are the optimizer and gradient state sharded according to the passage?
+frontmatter_about_about,frontmatter_about_about_0016,frontmatter/about/about.qmd,What is the name of the AI learning assistant featured throughout this resource?
+frontmatter_about_about,frontmatter_about_about_0016,frontmatter/about/about.qmd,Which teaching method inspired the design of SocratiQ?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0003,vol1/model_serving/model_serving.qmd,"What inversion in priorities occurs when moving from benchmarking to serving, according to the passage?"
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0003,vol1/model_serving/model_serving.qmd,What components are included in the latency term (L_{lat}) mentioned in the passage?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0129,vol2/fault_tolerance/fault_tolerance.qmd,What is the main failure mode for edge vision systems according to the passage?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0129,vol2/fault_tolerance/fault_tolerance.qmd,What does GPU health monitoring need to remove before replicas return results?
+vol1_introduction_introduction,vol1_introduction_introduction_0088,vol1/introduction/introduction.qmd,How many deployment paradigms are mentioned as fixing the envelope a system must operate within?
+vol1_introduction_introduction,vol1_introduction_introduction_0088,vol1/introduction/introduction.qmd,Which production case studies are listed in the passage?
+vol2_fleet_orchestration_fleet_orchestration,vol2_fleet_orchestration_fleet_orchestration_0042,vol2/fleet_orchestration/fleet_orchestration.qmd,What label is assigned to the x-axis in the plot?
+vol2_fleet_orchestration_fleet_orchestration,vol2_fleet_orchestration_fleet_orchestration_0042,vol2/fleet_orchestration/fleet_orchestration.qmd,What label is assigned to the y-axis in the plot?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0081,vol1/data_selection/data_selection.qmd,"According to the table, how many labeled examples are typically required for fine-tuning a foundation model per task?"
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0081,vol1/data_selection/data_selection.qmd,What is the relative compute cost per task when fine-tuning a foundation model compared to training from scratch?
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0145,vol2/sustainable_ai/sustainable_ai.qmd,"According to the passage, how much CO₂ is embodied in an A100 accelerator from manufacturing?"
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0145,vol2/sustainable_ai/sustainable_ai.qmd,"What is the unamortized upfront carbon burden for the 14‑day, 64‑A100 training run mentioned in the passage?"
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0151,vol1/nn_architectures/nn_architectures.qmd,What constraint is listed regarding memory capacity?
+vol1_nn_architectures_nn_architectures,vol1_nn_architectures_nn_architectures_0151,vol1/nn_architectures/nn_architectures.qmd,What bottleneck is identified as irregular data movement?
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0011,vol2/sustainable_ai/sustainable_ai.qmd,Which pair is identified as the canonical anchor for the geographic lever used throughout the chapter?
+vol2_sustainable_ai_sustainable_ai,vol2_sustainable_ai_sustainable_ai_0011,vol2/sustainable_ai/sustainable_ai.qmd,What range does grid carbon intensity span across the world's grids according to the passage?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0105,vol1/ml_ops/ml_ops.qmd,What types of accelerators do cloud providers offer for on-demand compute environments?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0105,vol1/ml_ops/ml_ops.qmd,Which managed service is mentioned as supporting automated adaptation of foundation models to new tasks?
+vol1_training_training,vol1_training_training_0157,vol1/training/training.qmd,"Which function call formats b_total_mem into a string with GB unit, precision of 1, and without commas?"
+vol1_training_training,vol1_training_training_0157,vol1/training/training.qmd,What is the formula given for speedup in the communication tax figure?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0120,vol1/hw_acceleration/hw_acceleration.qmd,Which AI processor mentioned uses wide SIMD and tensor cores for training?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0120,vol1/hw_acceleration/hw_acceleration.qmd,What type of workload does Intel Sapphire Rapids focus on optimizing?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0017,vol2/network_fabrics/network_fabrics.qmd,What type of flows are traditional networks designed to provide fairness for?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0017,vol2/network_fabrics/network_fabrics.qmd,How much data can a single AllReduce on a 175B parameter model exchange?
+vol2_introduction_introduction,vol2_introduction_introduction_0024,vol2/introduction/introduction.qmd,What does the bottleneck shift from when moving from the hardware layer to the infrastructure layer?
+vol2_introduction_introduction,vol2_introduction_introduction_0024,vol2/introduction/introduction.qmd,Which component manages PCIe DMA in the system software layer?
+backmatter_resources_phd_survival_guide,backmatter_resources_phd_survival_guide_0000,backmatter/resources/phd_survival_guide.qmd,"According to the passage, what broader set of skills are needed for successful research and scholarship beyond technical knowledge?"
+backmatter_resources_phd_survival_guide,backmatter_resources_phd_survival_guide_0000,backmatter/resources/phd_survival_guide.qmd,"From which academic fields did many of the resources in the appendix originate, as stated in the passage?"
+vol2_robust_ai_robust_ai,vol2_robust_ai_robust_ai_0055,vol2/robust_ai/robust_ai.qmd,Which two domains are cited in the passage as being vulnerable to adversarial attacks that can cause cascading systemic risks?
+vol2_robust_ai_robust_ai,vol2_robust_ai_robust_ai_0055,vol2/robust_ai/robust_ai.qmd,What two types of costs does the passage associate with defending against adversarial vulnerabilities?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0142,vol1/nn_computation/nn_computation.qmd,What are the required inputs and parameters for the backpropagation training step algorithm?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0142,vol1/nn_computation/nn_computation.qmd,What does the algorithm return after completing the backward pass?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0031,vol2/fault_tolerance/fault_tolerance.qmd,What temperature range is used during burn-in testing?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0031,vol2/fault_tolerance/fault_tolerance.qmd,What is the purpose of burn-in testing as described in the passage?
+vol1_backmatter_appendix_dam,vol1_backmatter_appendix_dam_0001,vol1/backmatter/appendix_dam.qmd,What symbol does the passage reserve for batch size?
+vol1_backmatter_appendix_dam,vol1_backmatter_appendix_dam_0001,vol1/backmatter/appendix_dam.qmd,"When cost is exploding, which rubric does the passage recommend using to target the dominant term?"
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0126,vol1/data_selection/data_selection.qmd,What expression defines the variable cost_investment?
+vol1_data_selection_data_selection,vol1_data_selection_data_selection_0126,vol1/data_selection/data_selection.qmd,What list of run counts is iterated over to compute the ROI values?
+vol1_training_training,vol1_training_training_0067,vol1/training/training.qmd,What is the effective batch size when using a per‑accelerator batch size of 16 with gradient accumulation over two steps?
+vol1_training_training,vol1_training_training_0067,vol1/training/training.qmd,How much activation memory would FP32 activations consume compared to the already applied FP16 mixed‑precision mode?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0006,vol1/nn_computation/nn_computation.qmd,What software from Ariane 4 was reused in Ariane 5 that contributed to the failure?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0006,vol1/nn_computation/nn_computation.qmd,How many seconds after the flight sequence began did the Ariane 5 launcher veer off course and explode?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0056,vol1/ml_workflow/ml_workflow.qmd,"What economic impact does neglecting reproducibility have on teams, according to the passage?"
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0056,vol1/ml_workflow/ml_workflow.qmd,"According to the passage, why are reproducible, optimized models not sufficient for production deployment?"
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0078,vol1/benchmarking/benchmarking.qmd,Why do many benchmarks include results across multiple hardware configurations?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0078,vol1/benchmarking/benchmarking.qmd,What energy consumption metrics are now included in specifications as sustainability becomes a priority?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0068,vol1/ml_workflow/ml_workflow.qmd,What types of realistic perturbations are included in robustness testing for image-based systems?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0068,vol1/ml_workflow/ml_workflow.qmd,"Why might models optimized for research-quality images fail when used by minimally trained technicians, according to the passage?"
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0168,vol2/ops_scale/ops_scale.qmd,How much latency degradation can a recommendation ensemble of 10–50 models experience when an upstream retrieval model slows by 20 ms?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0168,vol2/ops_scale/ops_scale.qmd,"According to @Sec-ml-operations-scale-monitoring-scale-73c5, what four categories of metrics are required for platform observability?"
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0111,vol1/data_engineering/data_engineering.qmd,What are the two competing access patterns that shape storage decisions for the labeled datasets?
+vol1_data_engineering_data_engineering,vol1_data_engineering_data_engineering_0111,vol1/data_engineering/data_engineering.qmd,Which workload requires sequential scans across millions of examples according to the passage?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0010,vol2/fault_tolerance/fault_tolerance.qmd,What type of failure can cause incorrect gradients that propagate through subsequent training steps without triggering explicit errors?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0010,vol2/fault_tolerance/fault_tolerance.qmd,"What observable signs may appear in ML training as a result of undetected corruption, according to the passage?"
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0009,vol1/conclusion/conclusion.qmd,Which components determine what the system could learn?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0009,vol1/conclusion/conclusion.qmd,Which components turn the computation into an executable optimization process?
+vol2_introduction_introduction,vol2_introduction_introduction_0043,vol2/introduction/introduction.qmd,Which algorithm is described as iteratively merging the most frequent character pairs to produce subword tokens?
+vol2_introduction_introduction,vol2_introduction_introduction_0043,vol2/introduction/introduction.qmd,How many tokens were in GPT-3's vocabulary according to the passage?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0087,vol1/frameworks/frameworks.qmd,What mathematical construct is used in forward mode automatic differentiation to compute derivatives?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0087,vol1/frameworks/frameworks.qmd,At what input value does the example Lst-forward_mode_dual run the function?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0108,vol1/frameworks/frameworks.qmd,Which term dominates training latency according to the iron law mentioned in the passage?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0108,vol1/frameworks/frameworks.qmd,What are the four components listed in the training memory equation $M_{\text{total}}$?
+vol2_edge_intelligence_edge_intelligence,vol2_edge_intelligence_edge_intelligence_0015,vol2/edge_intelligence/edge_intelligence.qmd,"What figure of merit should be used when ranking edge accelerator options for transformer decoding, according to the passage?"
+vol2_edge_intelligence_edge_intelligence,vol2_edge_intelligence_edge_intelligence_0015,vol2/edge_intelligence/edge_intelligence.qmd,"Why does quantization shrink $D_{\text{vol}}$ rather than the arithmetic per token, as explained in the passage?"
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0024,vol2/ops_scale/ops_scale.qmd,By what percentage can sequential testing reduce experiment duration compared to traditional A/B tests?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0024,vol2/ops_scale/ops_scale.qmd,"According to the SPRT rule in the passage, when is the null hypothesis $H_0$ accepted?"
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0149,vol1/hw_acceleration/hw_acceleration.qmd,In which year was the model 'GPT-3' released according to the passage?
+vol1_hw_acceleration_hw_acceleration,vol1_hw_acceleration_hw_acceleration_0149,vol1/hw_acceleration/hw_acceleration.qmd,Which model has the highest parameter count in the 'model_params' list?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0017,vol1/model_serving/model_serving.qmd,What is the first architectural decision in any serving system according to the passage?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0017,vol1/model_serving/model_serving.qmd,"According to the passage, what aspects does the choice of when predictions are computed shape?"
+vol2_introduction_introduction,vol2_introduction_introduction_0002,vol2/introduction/introduction.qmd,What three concepts replace single-node Data-Algorithm-Machine constraints in production fleets?
+vol2_introduction_introduction,vol2_introduction_introduction_0002,vol2/introduction/introduction.qmd,Which law is applied to estimate coordination tax and classify scaling regimes?
+vol2_security_privacy_security_privacy,vol2_security_privacy_security_privacy_0050,vol2/security_privacy/security_privacy.qmd,"According to the passage, what effect does achieving a smaller epsilon have on the required noise sigma?"
+vol2_security_privacy_security_privacy,vol2_security_privacy_security_privacy_0050,vol2/security_privacy/security_privacy.qmd,"How does the factor \(\sqrt{2\ln(1.25/\delta)}\) change as delta decreases, based on the passage?"
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0069,vol2/collective_communication/collective_communication.qmd,"What symptom may appear when GPU ranks are assigned without considering physical topology, according to the passage?"
+vol2_collective_communication_collective_communication,vol2_collective_communication_collective_communication_0069,vol2/collective_communication/collective_communication.qmd,"According to the passage, which pieces of information must a collective benchmark record to be considered reusable evidence?"
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0211,vol1/ml_ops/ml_ops.qmd,What types of wearable devices are mentioned as sources of physiological data in the patient treatment loop?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0211,vol1/ml_ops/ml_ops.qmd,How are treatment suggestions categorized based on the level of change required?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0016,vol2/network_fabrics/network_fabrics.qmd,Who proposed the Bulk Synchronous Parallel (BSP) model and in what year?
+vol2_network_fabrics_network_fabrics,vol2_network_fabrics_network_fabrics_0016,vol2/network_fabrics/network_fabrics.qmd,"According to the passage, what three steps characterize the barrier shape of synchronous data-parallel training?"
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0123,vol1/ml_ops/ml_ops.qmd,What two layers of telemetry are needed to quantify the relationship between distribution divergence and accuracy decay?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0123,vol1/ml_ops/ml_ops.qmd,Why can gradual long-term degradation evade coarse detection thresholds according to the passage?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0040,vol1/nn_computation/nn_computation.qmd,What is the layer size configuration of the modest three‑layer neural network mentioned in the passage?
+vol1_nn_computation_nn_computation,vol1_nn_computation_nn_computation_0040,vol1/nn_computation/nn_computation.qmd,"According to the passage, how does the computational cost of training per image compare to the cost of a forward pass?"
+vol2_backmatter_appendix_fleet,vol2_backmatter_appendix_fleet_0042,vol2/backmatter/appendix_fleet.qmd,What is the equation that defines the ridge point in the Roofline model?
+vol2_backmatter_appendix_fleet,vol2_backmatter_appendix_fleet_0042,vol2/backmatter/appendix_fleet.qmd,"According to the passage, how is a workload characterized when its intensity is below the ridge point?"
+vol1_training_training,vol1_training_training_0153,vol1/training/training.qmd,What are the three optimization steps described in the GPT-2 walkthrough calculation?
+vol1_training_training,vol1_training_training_0153,vol1/training/training.qmd,What is the stated goal of the GPT-2 walkthrough calculation?
+vol2_compute_infrastructure_compute_infrastructure,vol2_compute_infrastructure_compute_infrastructure_0110,vol2/compute_infrastructure/compute_infrastructure.qmd,"What intermediate operations are eliminated by fusing matrix multiplies with activation functions, dropout, and layer normalization in a single CUDA kernel launch?"
+vol2_compute_infrastructure_compute_infrastructure,vol2_compute_infrastructure_compute_infrastructure_0110,vol2/compute_infrastructure/compute_infrastructure.qmd,Which types of operations can CUDA kernels intermix with Tensor Core operations according to the passage?
+vol2_inference_inference,vol2_inference_inference_0006,vol2/inference/inference.qmd,What are the primary cost drivers for training versus inference in machine learning systems?
+vol2_inference_inference,vol2_inference_inference_0006,vol2/inference/inference.qmd,"According to the passage, what three linked decisions are required when building an inference service?"
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0002,vol2/data_storage/data_storage.qmd,"Which storage tiers are compared by bandwidth, latency, capacity, and cost?"
+vol2_data_storage_data_storage,vol2_data_storage_data_storage_0002,vol2/data_storage/data_storage.qmd,What strategies are suggested to prevent fleet-scale accelerator starvation?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0048,vol1/frameworks/frameworks.qmd,What is the term mentioned in the passage?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0048,vol1/frameworks/frameworks.qmd,Which optimization technique is referenced in the passage?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0033,vol1/model_compression/model_compression.qmd,What is the xshift value applied to the first gear?
+vol1_model_compression_model_compression,vol1_model_compression_model_compression_0033,vol1/model_compression/model_compression.qmd,What fill color is specified for both gears?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0074,vol1/ml_systems/ml_systems.qmd,What is the most immediate benefit of avoiding cloud round trips according to the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0074,vol1/ml_systems/ml_systems.qmd,How can a retail store with 50 cameras reduce transmission when processing is done locally?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0128,vol1/benchmarking/benchmarking.qmd,Which statistical measures are mentioned for quantifying inter-annotator agreement?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0128,vol1/benchmarking/benchmarking.qmd,What are the possible reasons given for agreement falling below conventional thresholds?
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0044,vol1/responsible_engr/responsible_engr.qmd,"According to the passage, what are three actions systems that use differential privacy must perform?"
+vol1_responsible_engr_responsible_engr,vol1_responsible_engr_responsible_engr_0044,vol1/responsible_engr/responsible_engr.qmd,"How did Spotify implement transparency at the user‑interface layer, as described in the passage?"
+vol1_backmatter_appendix_dam,vol1_backmatter_appendix_dam_0014,vol1/backmatter/appendix_dam.qmd,Which technique overlaps the communication axis (M) with the aggregation axis (A) according to the table?
+vol1_backmatter_appendix_dam,vol1_backmatter_appendix_dam_0014,vol1/backmatter/appendix_dam.qmd,What specific DataLoader settings are mentioned for implementing Prefetching?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0038,vol2/responsible_ai/responsible_ai.qmd,How many Americans were affected annually by the Optum algorithm?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0038,vol2/responsible_ai/responsible_ai.qmd,To what percentage would Black patient identification rise if the proxy were corrected?
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0058,vol2/ops_scale/ops_scale.qmd,"What must the invariants of a deployment API survive across, according to the passage?"
+vol2_ops_scale_ops_scale,vol2_ops_scale_ops_scale_0058,vol2/ops_scale/ops_scale.qmd,"What limitation of Prometheus's time-series model is mentioned, and what architectural solution does the passage suggest?"
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0119,vol1/ml_systems/ml_systems.qmd,What monetary loss did Zillow incur due to the failure described in the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0119,vol1/ml_systems/ml_systems.qmd,"According to the passage, what was the primary cause of the failure rather than model accuracy?"
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0039,vol2/responsible_ai/responsible_ai.qmd,What policy is enforced to achieve equal approval rates across groups?
+vol2_responsible_ai_responsible_ai,vol2_responsible_ai_responsible_ai_0039,vol2/responsible_ai/responsible_ai.qmd,Which group is described as having a default rate due to systemic factors?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0038,vol1/ml_systems/ml_systems.qmd,"In the code, which variable computes the product of the number of TPUv4_4096 chips and the TPUv4 compute peak flops?"
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0038,vol1/ml_systems/ml_systems.qmd,"According to the comment, what is the dense fp4 performance (in TFLOPS) stored in the registry for NVIDIA's ""1 petaflop"" envelope?"
+frontmatter_socratiq_socratiq,frontmatter_socratiq_socratiq_0003,frontmatter/socratiq/socratiq.qmd,How many days is the 'socratiq' cookie set to persist when the toggle button is clicked?
+frontmatter_socratiq_socratiq,frontmatter_socratiq_socratiq_0003,frontmatter/socratiq/socratiq.qmd,What text is displayed on the toggle button when the SocratiQ state is active?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0024,vol1/conclusion/conclusion.qmd,What unit is d_vol converted to before extracting its magnitude in the code?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0024,vol1/conclusion/conclusion.qmd,Which variable stores the GPU memory bandwidth converted to gigabytes per second?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0086,vol1/benchmarking/benchmarking.qmd,What three constraints form the interdependent triangle for edge deployments?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0086,vol1/benchmarking/benchmarking.qmd,How does the impact of power differ between cloud and edge deployments according to the passage?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0109,vol1/ml_systems/ml_systems.qmd,What is the assumed amount of raw audio data per day?
+vol1_ml_systems_ml_systems,vol1_ml_systems_ml_systems_0109,vol1/ml_systems/ml_systems.qmd,"According to the guard condition, what is the minimum expected bandwidth reduction factor?"
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0156,vol1/benchmarking/benchmarking.qmd,What false confidence does benchmarking create according to the passage?
+vol1_benchmarking_benchmarking,vol1_benchmarking_benchmarking_0156,vol1/benchmarking/benchmarking.qmd,What is the fallacy described regarding benchmark performance?
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0029,vol1/backmatter/appendix_machine.qmd,What is the value assigned to the \H macro in the tikz picture?
+vol1_backmatter_appendix_machine,vol1_backmatter_appendix_machine_0029,vol1/backmatter/appendix_machine.qmd,Which variable holds the formatted bandwidth string for the H100's NVLink interconnect?
+vol1_parts_deploy_principles,vol1_parts_deploy_principles_0003,vol1/parts/deploy_principles.qmd,"According to the passage, why is drift monitoring alone insufficient to establish degradation?"
+vol1_parts_deploy_principles,vol1_parts_deploy_principles_0003,vol1/parts/deploy_principles.qmd,What must observability combine with statistical drift signals beyond system metrics?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0023,vol1/conclusion/conclusion.qmd,What precision is specified when formatting the variable t_mem_ms_str?
+vol1_conclusion_conclusion,vol1_conclusion_conclusion_0023,vol1/conclusion/conclusion.qmd,Which function call formats the GPU's peak FLOPs per second in the code snippet?
+vol2_frontmatter_about,vol2_frontmatter_about_0022,vol2/frontmatter/about.qmd,Under which Creative Commons license is this work distributed?
+vol2_frontmatter_about,vol2_frontmatter_about_0022,vol2/frontmatter/about.qmd,Where can the source of this work be accessed?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0044,vol1/ml_workflow/ml_workflow.qmd,What fill color is applied to the funnel shape in the TikZ code?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0044,vol1/ml_workflow/ml_workflow.qmd,How many nodes are defined with a red fill (myred) in the nodes picture?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0127,vol1/model_serving/model_serving.qmd,What is the goal of the KV-cache growth figure described in the passage?
+vol1_model_serving_model_serving,vol1_model_serving_model_serving_0127,vol1/model_serving/model_serving.qmd,"According to the passage, how is the KV cache size in bytes calculated?"
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0005,vol2/fault_tolerance/fault_tolerance.qmd,What is the approximate interval between failures for the cluster on average?
+vol2_fault_tolerance_fault_tolerance,vol2_fault_tolerance_fault_tolerance_0005,vol2/fault_tolerance/fault_tolerance.qmd,What baseline does the cluster MTBF scaling isolate across cluster sizes?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0231,vol1/ml_ops/ml_ops.qmd,What three types of subtle inconsistencies are cited as causes of training-serving skew?
+vol1_ml_ops_ml_ops,vol1_ml_ops_ml_ops_0231,vol1/ml_ops/ml_ops.qmd,"In the e‑commerce ranking model example, which feature and computation mismatch leads to material accuracy loss?"
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0140,vol1/frameworks/frameworks.qmd,What five decisions must the framework resolve when a programmer writes `model(input)`?
+vol1_frameworks_frameworks,vol1_frameworks_frameworks_0140,vol1/frameworks/frameworks.qmd,"According to the passage, what appears only as a preview of the same abstraction boundary?"
+vol2_parts_responsible_fleet_principles,vol2_parts_responsible_fleet_principles_0005,vol2/parts/responsible_fleet_principles.qmd,"According to the passage, why is it insufficient to maximize accuracy on static test data?"
+vol2_parts_responsible_fleet_principles,vol2_parts_responsible_fleet_principles_0005,vol2/parts/responsible_fleet_principles.qmd,What four technical dimensions are listed that together help turn a capable fleet into a trustworthy one?
+vol2_performance_engineering_performance_engineering,vol2_performance_engineering_performance_engineering_0042,vol2/performance_engineering/performance_engineering.qmd,What is the approximate amount of materialized HBM state used by the naive attention rung?
+vol2_performance_engineering_performance_engineering,vol2_performance_engineering_performance_engineering_0042,vol2/performance_engineering/performance_engineering.qmd,By roughly how many times does FlashAttention shrink attention memory compared to the naive attention rung?
+vol2_distributed_training_distributed_training,vol2_distributed_training_distributed_training_0057,vol2/distributed_training/distributed_training.qmd,What are the two hardware configurations for which NVLink bandwidth strings are defined in the DistTrainSummaryRecap class?
+vol2_distributed_training_distributed_training,vol2_distributed_training_distributed_training_0057,vol2/distributed_training/distributed_training.qmd,"According to the passage, what does the bottleneck shift to in the federated edge case?"
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0085,vol1/ml_workflow/ml_workflow.qmd,What are the stages of the data pipeline described in the passage?
+vol1_ml_workflow_ml_workflow,vol1_ml_workflow_ml_workflow_0085,vol1/ml_workflow/ml_workflow.qmd,"According to the passage, what do the feedback arrows in @fig-ml-lifecycle represent?"
+vol2_distributed_training_distributed_training,vol2_distributed_training_distributed_training_0059,vol2/distributed_training/distributed_training.qmd,"Which parallelism strategies does Megatron-LM combine, and how are they applied across the hardware hierarchy?"
+vol2_distributed_training_distributed_training,vol2_distributed_training_distributed_training_0059,vol2/distributed_training/distributed_training.qmd,"How does the passage describe the relationship between data, tensor, pipeline, and expert parallelism strategies?"
+vol2_backmatter_glossary_glossary,vol2_backmatter_glossary_glossary_0008,vol2/backmatter/glossary/glossary.qmd,What does a brain-computer interface enable according to the passage?
+vol2_backmatter_glossary_glossary,vol2_backmatter_glossary_glossary_0008,vol2/backmatter/glossary/glossary.qmd,"In the bulk synchronous parallel (BSP) execution model, what are the three steps workers perform?"

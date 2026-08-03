@@ -1,0 +1,266 @@
+{
+  "uid": "study-assistant",
+  "title": "Study Assistant Evaluation Dashboard",
+  "schemaVersion": 37,
+  "version": 4,
+  "refresh": "30s",
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Response Time",
+      "type": "timeseries",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT timestamp AS \"time\", response_time AS \"value\" FROM conversations ORDER BY timestamp;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 2,
+      "title": "Token Usage",
+      "type": "timeseries",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT timestamp AS \"time\", total_tokens AS \"value\" FROM conversations WHERE total_tokens > 0 ORDER BY timestamp;"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 3,
+      "title": "LLM Cost",
+      "type": "timeseries",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT timestamp AS \"time\", cost AS \"value\" FROM conversations WHERE cost > 0 ORDER BY timestamp;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 4,
+      "title": "Model Usage",
+      "type": "barchart",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT model_used, COUNT(*) AS count FROM conversations GROUP BY model_used ORDER BY count DESC;"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 8,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 5,
+      "title": "Feedback Score",
+      "type": "piechart",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT CASE WHEN feedback = 1 THEN 'Positive' WHEN feedback = -1 THEN 'Negative' END AS label, COUNT(*) AS value FROM feedback GROUP BY feedback;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 16,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 6,
+      "title": "Retrieval Methods",
+      "type": "barchart",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT retrieval_method, COUNT(*) AS count FROM conversations GROUP BY retrieval_method ORDER BY count DESC;"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 16,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 7,
+      "title": "Reranker Usage",
+      "type": "piechart",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT CASE WHEN reranker_used THEN 'Used' ELSE 'Not Used' END AS reranker, COUNT(*) AS value FROM conversations GROUP BY reranker_used;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 24,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 8,
+      "title": "Answer Correctness",
+      "type": "piechart",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT CASE WHEN answer_correct = TRUE THEN 'Correct' WHEN answer_correct = FALSE THEN 'Incorrect' ELSE 'Not Evaluated' END AS result, COUNT(*) AS value FROM conversations GROUP BY result;"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 24,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 9,
+      "title": "Recent Conversations",
+      "type": "table",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT timestamp, question, retrieval_method, reranker_used, answer_correct, total_tokens, response_time, top_retrieval_score, avg_retrieval_score FROM conversations ORDER BY timestamp DESC LIMIT 5;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 32,
+        "w": 24,
+        "h": 8
+      }
+    },
+    {
+      "id": 10,
+      "title": "Top Retrieval Score",
+      "type": "timeseries",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT timestamp AS \"time\", top_retrieval_score AS \"value\" FROM conversations WHERE top_retrieval_score IS NOT NULL ORDER BY timestamp;"
+        }
+      ],
+      "gridPos": {
+        "x": 0,
+        "y": 40,
+        "w": 12,
+        "h": 8
+      }
+    },
+    {
+      "id": 11,
+      "title": "Average Retrieval Score",
+      "type": "timeseries",
+      "datasource": {
+        "type": "postgres",
+        "uid": "YOUR_DATASOURCE_UID"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT timestamp AS \"time\", avg_retrieval_score AS \"value\" FROM conversations WHERE avg_retrieval_score IS NOT NULL ORDER BY timestamp;"
+        }
+      ],
+      "gridPos": {
+        "x": 12,
+        "y": 40,
+        "w": 12,
+        "h": 8
+      }
+    }
+  ]
+}

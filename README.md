@@ -1,106 +1,486 @@
 # Harvard MLSys Study Assistant ("Zero to Hero")
-An end-to-end production RAG application built for the **LLM Zoomcamp Final Project**. This conversational AI study assistant ingests the open-source Quarto and Markdown source chapters from the **Harvard CS249r: Machine Learning Systems** textbook (`harvard-edge/cs249r_book`). 
 
-It provides an intuitive interface for students to learn complex hardware-aware machine learning, compilation graphs, edge AI constraints, and tinyML systems from absolute zero to hero.
+A Retrieval-Augmented Generation (RAG) application for the **LLM Zoomcamp Final Project**.
 
-> **Disclaimer**
->
-> This project was developed as an educational project for the **LLM Zoomcamp Final Project**. It is **not affiliated with, endorsed by, or sponsored by Harvard University or the authors of the *CS249r: Machine Learning Systems* textbook**.
->
-> The RAG knowledge base is built from the publicly available Quarto and Markdown source files from the **harvard-edge/cs249r_book**.
->
-> **Repository**: <https://github.com/harvard-edge/cs249r_book>
->
-> All rights to the original content belong to their respective authors and copyright holders.
->
-> This application is intended solely as a study aid. AI-generated responses may occasionally contain inaccuracies or incomplete information. For authoritative and up-to-date content, please refer to the original textbook and repository.
+The assistant answers questions about the Harvard **CS249r: Machine Learning Systems** textbook by retrieving relevant textbook passages and generating grounded answers using an LLM.
 
-## Problem
-Machine Learning Systems (MLSys) is a multidisciplinary subject covering deep learning optimization, distributed training, quantization, compilation, TinyTorch, edge AI, and hardware acceleration. Students often struggle to locate explanations across multiple chapters and understand how concepts connect. Searching through an entire textbook interrupts learning.
+The goal is to provide students with a reliable study assistant that can search hundreds of pages of Machine Learning Systems material using natural language questions.
 
-## What our assistant does
-Our AI assistant helps students:
+---
 
-Explain Machine Learning Systems concepts.
-Retrieve relevant textbook sections.
-Explain TinyTorch examples.
-Compare techniques (e.g., quantization vs pruning).
-Generate quizzes for revision.
-Cite textbook chapters.
+# Disclaimer
 
-## Target Users
+This project was developed as an educational project for the **LLM Zoomcamp Final Project**.
 
-Undergraduate and graduate students studying Harvard CS249r: Machine Learning Systems, engineers learning TinyML, Edge AI, model optimization, and compiler systems.
+It is **not affiliated with, endorsed by, or sponsored by Harvard University or the authors of the CS249r: Machine Learning Systems textbook**.
 
-## LLM Zoomcamp Project Pillars Matrix
-| Course Requirement | Implementation Architecture Detail |
-| :--- | :--- |
-| **1. Unique Dataset & Ingestion** | Custom scraper downloads `.qmd`/`.md` files from Harvard's repo; parses text keeping code blocks intact. |
-| **2. Vector & Retrieval Database** | Local **Qdrant Vector Database** container running local `all-MiniLM-L6-v2` dense embedding arrays. |
-| **3. Interchangeable LLM Engine** | Unified RAG layer with zero-downtime routing toggling between **Groq (Llama 3)** and **OpenAI (GPT-4o)**. |
-| **4. Evaluation Strategy** | Built-in **Concept Quiz Tester** utilizing an active LLM-as-a-Judge generation and validation mechanism. |
-| **5. Monitoring & Analytics** | Thread-safe SQLite logger tracking timestamps, questions, contexts, response latencies, and user UI feedback loops. |
+The knowledge base is created from the publicly available Quarto and Markdown source files from:
 
-## System Architecture Diagram 
-```text
-                     ┌──────────────────┐
-                     │ Harvard GitHub   │ (Fetches .qmd / .md files)
-                     └─────────┬────────┘
-                               │
-                        [ 1. Ingest.py ]
-                               │ (all-MiniLM-L6-v2 Embeddings)
-                               ▼
-  ┌────────────────────────────────────────────────────────┐
-  │                   DOCKER ENVIRONMENT                   │
-  │                                                        │
-  │  ┌──────────────┐       ┌─────────────┐                │
-  │  │  Qdrant DB   │◄─────►│ RAG Engine  │                │
-  │  │ (Port 6333)  │       │ (Groq/OAI)  │                │
-  │  └──────────────┘       └──────┬──────┘                │
-  │                                │                       │
-  │                         [ 2. App.py ]                  │
-  │                                │                       │
-  │  ┌──────────────┐              ▼                       │
-  │  │ SQLite Log   │◄────── [Streamlit UI]                │
-  │  │ (Monitoring) │          (Port 8501)                 │
-  │  └──────────────┘                                      │
-  └────────────────────────────────────────────────────────┘
+Repository:
+https://github.com/harvard-edge/cs249r_book
+
+All rights to the original textbook content belong to their respective authors and copyright holders.
+
+This application is intended only as a study aid. AI-generated responses may occasionally contain inaccuracies or incomplete information. For authoritative information, refer to the original textbook repository.
+
+---
+
+# Problem Description
+
+Machine Learning Systems courses cover a wide range of topics including:
+
+- Distributed training
+- Model serving
+- Feature stores
+- Embeddings
+- Vector databases
+- Monitoring
+- Hardware acceleration
+- ML infrastructure
+
+Students often need to search hundreds of pages of technical material to locate specific concepts, definitions, and implementation details.
+
+Traditional keyword search struggles when different terminology is used to describe similar concepts.
+
+Large language models provide excellent explanations but may generate incorrect information when they do not have access to the original course material.
+
+This project solves this problem by combining:
+
+1. Document retrieval from the CS249r textbook
+2. Hybrid search using vector similarity and BM25 keyword retrieval
+3. LLM generation grounded only on retrieved textbook passages
+
+The result is a study assistant that provides natural-language answers while reducing hallucination risk.
+
+---
+
+# Features
+
+## Knowledge Base
+
+- Downloads Harvard CS249r textbook source files
+- Supports Quarto (`.qmd`) and Markdown (`.md`) documents
+- Processes textbook content into searchable chunks
+- Preserves document metadata and source references
+
+## Retrieval System
+
+Hybrid retrieval pipeline combining:
+
+- Vector similarity search for semantic understanding
+- BM25 retrieval for exact keyword matching
+- Weighted score fusion for final ranking
+
+The retriever supports both:
+
+- `text` document schema
+- legacy `content` document schema
+
+## RAG Answer Generation
+
+The assistant:
+
+- Retrieves relevant textbook sections
+- Builds grounded context
+- Generates answers using an LLM
+- Returns source sections used for the response
+
+## Interfaces
+
+The application provides:
+
+- Command-line interface
+- Flask REST API
+- Streamlit web interface
+
+## Evaluation
+
+Includes:
+
+- Retrieval evaluation
+- Hit Rate
+- Mean Reciprocal Rank (MRR)
+- LLM-as-a-Judge answer evaluation
+
+## Monitoring
+
+Designed to support:
+
+- Conversation logging
+- User feedback collection
+- Performance monitoring dashboards
+
+---
+
+# Target Users
+
+The primary users are:
+
+- Students studying Harvard CS249r Machine Learning Systems
+- Engineers learning ML infrastructure
+- Developers interested in:
+  - TinyML
+  - Edge AI
+  - Model optimisation
+  - ML compiler systems
+  - Production machine learning
+
+---
+
+# LLM Zoomcamp Final Project Requirements
+
+| Requirement | Implementation |
+|---|---|
+| Unique dataset and ingestion | Custom ingestion pipeline processes Harvard CS249r `.qmd` and `.md` textbook sources |
+| Retrieval system | Hybrid vector + BM25 retrieval over textbook chunks |
+| LLM integration | RAG pipeline using Groq Llama models and OpenAI-compatible APIs |
+| Evaluation strategy | Retrieval metrics and LLM-as-a-Judge evaluation |
+| Monitoring | PostgreSQL logging architecture with Grafana dashboard support |
+
+---
+
+# Architecture
+
 ```
-## Execution & Reproducibility Guide
-Follow these exact steps to spin up the containerized ecosystem on your machine.
-### 1. Prerequisites
-Ensure you have the following installed:
+                    User Question
 
-- **Docker** and **Docker Compose**
-- A **Groq API Key** or **OpenAI API Key**
+                         |
+                         v
 
-### 2. Environment Configuration
-Create a `.env` file in the root directory of your cloned folder and fill in your credentials:
-```env
-# Choose: groq or openai
-LLM_PROVIDER=groq
+              +--------------------+
+              | Query Processing   |
+              +--------------------+
 
-GROQ_API_KEY=gsk_your_actual_groq_key_here
-OPENAI_API_KEY=sk_your_actual_openai_key_here
+                         |
+                         v
+
+              +--------------------+
+              | Hybrid Retrieval   |
+              |                    |
+              | Vector Search      |
+              | BM25 Search        |
+              +--------------------+
+
+                         |
+                         v
+
+              +--------------------+
+              | Retrieved Chunks   |
+              +--------------------+
+
+                         |
+                         v
+
+              +--------------------+
+              | LLM Generation     |
+              | Groq / OpenAI API  |
+              +--------------------+
+
+                         |
+                         v
+
+              +--------------------+
+              | Grounded Answer    |
+              +--------------------+
+
+                    /          \
+
+                   /            \
+
+                  v              v
+
+          PostgreSQL        User Feedback
+
+                  |
+                  v
+
+             Grafana Dashboard
 ```
-### 3. Spin Up the Docker Microservices
-Build and start the application container and the vector database backend in detached mode:
+
+---
+
+# Project Structure
+
+```
+.
+
+├── study_assistant/
+│
+│   ├── app.py
+│   ├── rag.py
+│   ├── ingest.py
+│   ├── minsearch.py
+│   ├── db.py
+│   └── config.py
+│
+├── evaluation/
+│
+│   ├── generate_ground_truth.py
+│   ├── evaluate_retrieval.py
+│   └── evaluate_rag.py
+│
+├── data/
+│
+│   ├── raw/
+│   └── processed/
+│
+├── Dockerfile
+├── docker-compose.yml
+└── README.md
+```
+
+---
+
+# Installation
+
+## Clone Project
+
 ```bash
-docker-compose up --build -d
+git clone <your-repository-url>
+
+cd <project-folder>
 ```
-### 4. Execute Knowledge Ingestion & Vectorization
-Run the ingestion worker inside the container environment to pull the Harvard dataset, split the text blocks, compute local embeddings, and index them into Qdrant:
+
+## Install Dependencies
+
 ```bash
-docker-compose exec app python ingest.py
+uv sync
 ```
-### 5. Access the Platform UI
-Once ingestion concludes successfully, open your web browser and navigate to:
-```text
-Open ***http://localhost:8501*** in your browser.
+
+## Download CS249r Textbook Source
+
+```bash
+mkdir -p data/raw
+
+git clone https://github.com/harvard-edge/cs249r_book data/raw/cs249r_book
+
 ```
-## Evaluation & Production Monitoring
 
-- **User Feedback Tracking:** Every response includes **👍 Good Answer** and **👎 Missing Info** buttons. Feedback is logged in the local SQLite database.
+---
 
-- **Telemetry Dashboard:** Open **Analytics Dashboard** from the sidebar to inspect response latency, request distributions, and user feedback.
+# Build Knowledge Base
 
+Run ingestion:
+
+```bash
+uv run python -m study_assistant.ingest
+```
+
+This command:
+
+- Parses the Quarto (.qmd) and Markdown (.md) textbook files
+- Splits the textbook into searchable chunks
+- Builds the in-memory retrieval dataset under data/processed/
+
+---
+
+# Running the Application
+
+## Start the Flask API
+
+```bash
+uv run python study_assistant/app.py
+
+## REST API
+
+Start server:
+
+```bash
+uv run python study_assistant/app.py
+```
+
+Example request:
+
+```bash
+ curl -X POST http://localhost:5000/question \
+-H "Content-Type: application/json" \
+-d '{
+    "question":"What is retrieval augmented generation?"
+}
+```
+
+Example response:
+
+```json
+{
+  "answer": "Retrieval-Augmented Generation (RAG) is a type of architecture that depends heavily on the quality of the retrieved context. It is described in the section \"Robust AI\" (vol2/robust_ai/robust_ai.qmd) as follows:\n\n\"In Retrieval-Augmented Generation (RAG) architectures (@sec-inference-scale), robustness depends heavily on the quality of the retrieved context. **Retrieval Noise**, the injection of irrelevant or conflicting documents into the prompt, can distract the model, causing it to ignore its internal parametric knowledge and propagate errors from the context.\"\n\nRAG architectures use retrieval mechanisms to fetch relevant context, which is then used to augment the generation process. The quality of the retrieved context is crucial for the robustness of RAG deployments.",
+  "conversation_id": "c331cf92-07d6-449f-9e1b-48a784393a51",
+  "model": "llama-3.1-8b-instant",
+  "question": "What is retrieval augmented generation?",
+  "response_time": 1.6115777492523193,
+  "sources": [
+    "vol1/backmatter/glossary/glossary.qmd",
+    "vol1/data_engineering/data_engineering.qmd",
+    "vol1/data_selection/data_selection.qmd",
+    "vol1/model_serving/model_serving.qmd",
+    "vol1/nn_architectures/nn_architectures.qmd",
+    "vol2/data_storage/data_storage.qmd",
+    "vol2/ops_scale/ops_scale.qmd",
+    "vol2/robust_ai/robust_ai.qmd",
+    "vol3/OUTLINE.md"
+  ]
+}
+```
+
+---
+
+# Evaluation
+
+The project contains two evaluation pipelines.
+
+---
+
+## 1. Retrieval Evaluation
+
+Hybrid retrieval combines TF-IDF lexical similarity, SentenceTransformer semantic similarity, and BM25 keyword search. The final ranking uses weighted score fusion and down-weights low-information sections such as glossaries and appendices.
+
+The retrieval benchmark uses questions generated from textbook chunks.
+
+Metrics:
+
+- Hit Rate
+- Mean Reciprocal Rank (MRR)
+
+Run:
+
+```bash
+uv run python evaluation/generate_ground_truth.py
+
+uv run python evaluation/evaluate_retrieval.py
+```
+
+Best results:
+    text_boost  semantic_weight  hit_rate       mrr
+0         0.25              0.6  0.827982  0.689029
+4         0.30              0.7  0.827982  0.688647
+7         0.35              0.7  0.821101  0.688341
+3         0.30              0.6  0.821101  0.688341
+11        0.40              0.8  0.821101  0.688341
+8         0.35              0.8  0.823394  0.687844
+5         0.30              0.8  0.832569  0.686774
+10        0.40              0.7  0.811927  0.686315
+6         0.35              0.6  0.809633  0.684709
+9         0.40              0.6  0.811927  0.684098
+
+---
+
+## 2. RAG Answer Evaluation
+
+Generated answers are evaluated using an LLM-as-a-Judge.
+
+The evaluator classifies responses as:
+
+- RELEVANT
+- PARTLY_RELEVANT
+- NON_RELEVANT
+
+Run:
+
+```bash
+uv run python evaluation/evaluate_rag.py
+```
+
+Relevance distribution:
+relevance
+RELEVANT           0.500
+PARTLY_RELEVANT    0.325
+NON_RELEVANT       0.170
+UNKNOWN            0.005
+Name: proportion, dtype: float64
+
+Saved: data/rag_evaluation_results.csv
+
+---
+
+# Retrieval Improvements
+
+The current retrieval system includes:
+
+## Hybrid Retrieval
+
+Combines:
+
+- Semantic vector retrieval
+- BM25 keyword matching
+
+## Score Fusion
+
+Retrieval results are combined using weighted scoring.
+
+## Noise Reduction
+
+Low-value sections such as:
+
+- Frontmatter
+- Glossary
+- Appendices
+
+receive reduced ranking weight.
+
+---
+
+# Current Limitations
+
+- Single textbook knowledge base
+- In-memory retrieval index
+- No authentication system
+- Index rebuild required after changing source documents
+- Retrieval parameters require manual tuning
+- Answers depend on retrieved textbook context
+- No conversation memory
+
+---
+
+# Future Improvements
+
+Planned improvements:
+
+## Retrieval
+
+- Cross-encoder reranking
+- Improved chunking strategies
+- Automatic retrieval parameter optimisation
+- Query rewriting using LLMs
+
+## Application
+
+- Conversation history
+- User accounts
+- Personal study sessions
+- Better feedback collection
+
+## Infrastructure
+
+- PostgreSQL conversation logging
+- Grafana monitoring dashboard
+- Docker deployment
+- Cloud deployment
+
+---
+
+# Technology Stack
+
+| Component       | Technology                            |
+| --------------- | ------------------------------------- |
+| Language        | Python                                |
+| Package Manager | uv                                    |
+| Retrieval       | TF-IDF + Sentence Transformers + BM25 |
+| Embeddings      | sentence-transformers                 |
+| LLM             | Groq (Llama 3.1 8B)                   |
+| API             | Flask                                 |
+| Evaluation      | LLM-as-a-Judge                        |
+| Data            | Harvard CS249r textbook               |
+
+---
+
+# Conclusion
+
+Harvard MLSys Study Assistant demonstrates how Retrieval-Augmented Generation can transform large technical textbooks into interactive learning systems.
+
+By grounding LLM responses in retrieved textbook passages, the system provides a more reliable and transparent learning experience compared with standalone language models.
+
+## License
+
+This project is released for educational purposes as part of the LLM Zoomcamp Final Project.
+
+The Harvard CS249r textbook content is not included in this repository. Users should obtain the source material from the official Harvard repository, which is subject to its own licence and copyright.
