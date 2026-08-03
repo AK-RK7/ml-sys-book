@@ -236,9 +236,9 @@ The primary users are:
 ## Clone Project
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/AK-RK7/ml-sys-book.git
 
-cd <project-folder>
+cd ml-sys-book
 ```
 
 ## Install Dependencies
